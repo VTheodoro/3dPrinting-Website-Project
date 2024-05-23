@@ -5,44 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução à Impressão 3D com Creality K1</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .header {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-        .header h1 {
-            margin: 0;
-        }
-        .header p {
-            margin: 0;
-        }
-        .intro, .how-it-works, .applications {
-            padding: 40px 0;
-        }
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    <!-- Cabeçalho -->
-    <header class="header text-center">
-        <div class="container">
-            <h1>Introdução à Impressão 3D</h1>
-            <p>Explorando as Possibilidades com a Creality K1</p>
-        </div>
-    </header>
 
-    <!-- Introdução à Impressão 3D -->
-    <section class="intro text-center py-5">
-        <div class="container">
-            <h2>O Que é Impressão 3D?</h2>
-            <p>A impressão 3D é uma tecnologia que permite a criação de objetos tridimensionais a partir de um modelo digital. Utilizando materiais como plástico, a impressora 3D constrói o objeto camada por camada.</p>
+<body>
+
+  <!-- Cabeçalho com Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <img src="imgs/printh3d.png">
+        <a class="navbar-brand" href="#">Impressão 3D</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Como Funciona</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aplicações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
+</nav>
+
+<!-- Cabeçalho -->
+<header class="header text-center">
+    <div class="container">
+        <h1>Introdução à Impressão 3D</h1>
+        <p>Explorando as Possibilidades com a Creality K1</p>
+    </div>
+</header>
+
+<!-- Introdução à Impressão 3D -->
+<section class="intro text-center py-5">
+    <div class="container">
+        <h2>O Que é Impressão 3D?</h2>
+        <p>A impressão 3D é uma tecnologia que permite a criação de objetos tridimensionais a partir de um modelo digital. Utilizando materiais como plástico, a impressora 3D constrói o objeto camada por camada.</p>
+    </div>
+</section>
 
     <!-- Como Funciona a Impressão 3D -->
     <section class="how-it-works text-center bg-light py-5">
@@ -93,6 +111,17 @@
             <p>&copy; 2024 Impressão 3D por Victor Theodoro. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
