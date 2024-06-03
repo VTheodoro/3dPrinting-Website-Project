@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,122 +11,148 @@
 
 <body>
 
-  <!-- Cabeçalho com Navegação -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-        <img src="imgs/printh3d.png">
-        <a class="navbar-brand" href="#">Impressão 3D</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Como Funciona</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Aplicações</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-                <li class="nav-item">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-                    </form>
-                </li>
-            </ul>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Impressão 3D</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#como-funciona">Como Funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aplicacoes">Aplicações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Cabeçalho -->
-<header class="header text-center">
-    <div class="container">
-        <h1>Introdução à Impressão 3D</h1>
-        <p>Explorando as Possibilidades com a Creality K1</p>
-    </div>
-</header>
+    <!-- Propaganda Para a Nova Creality K1 -->
+    <section class="hero bg-primary text-white text-center pt-3">
+        <div class="container">
+            <h1>Introdução à Impressão 3D</h1>
+            <p>Explorando as Possibilidades com a nova Creality K1</p>
 
-<!-- Introdução à Impressão 3D -->
-<section class="intro text-center py-5">
-    <div class="container">
-        <h2>O Que é Impressão 3D?</h2>
-        <p>A impressão 3D é uma tecnologia que permite a criação de objetos tridimensionais a partir de um modelo digital. Utilizando materiais como plástico, a impressora 3D constrói o objeto camada por camada.</p>
-    </div>
-</section>
+            <img src="imgs/creality-k1.png" class="img-fluid custom-img-size" style="width: 300px; height: 280px;" alt="Creality K1">
+
+            <br>
+
+            <a href="https://www.creality.com/br/products/creality-k1-3d-printer" class="btn btn-light m-4">Saiba Mais</a>
+        </div>
+    </section>
+
+
+    <!-- Sobre a Impressão -->
+    <section id="sobre" class="py-5 text-center">
+        <div class="container">
+            <h2>O Que é Impressão 3D?</h2>
+            <p>A impressão 3D é uma tecnologia que permite a criação de objetos tridimensionais a partir de um modelo
+                digital. Utilizando materiais como plástico, a impressora 3D constrói o objeto camada por camada.</p>
+                <img src="imgs/principal.jpg" class="img-fluid alt="Imagem Principal" style="width: 650px; border-radius: 5%;">
+        </div>
+    </section>
 
     <!-- Como Funciona a Impressão 3D -->
-    <section class="how-it-works text-center bg-light py-5">
+    <section id="como-funciona" class="bg-light py-2 text-center">
         <div class="container">
             <h2>Como Funciona a Impressão 3D?</h2>
             <p>Para entender como a impressão 3D funciona, vamos usar a Creality K1 como exemplo:</p>
+    
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <h4>1. Criação do Modelo</h4>
+                    <img src="imgs/modelagem3d.png" class="img-fluid" style="width: 300px; height: 250px; border-radius: 5%;">
+                    <h4 class="mt-4">1. Criação do Modelo</h4>
                     <p>O processo começa com a criação de um modelo 3D usando software de modelagem ou digitalizando um objeto existente.</p>
                 </div>
+    
                 <div class="col-md-4">
-                    <h4>2. Preparação para Impressão</h4>
+                    <img src="imgs/fatiador.png" class="img-fluid" style="width: 300px; height: 250px; border-radius: 5%;">
+                    <h4 class="mt-4">2. Preparação para Impressão</h4>
                     <p>O modelo 3D é enviado para um software de fatiamento, que divide o modelo em camadas e gera o código que a impressora irá seguir.</p>
                 </div>
+    
                 <div class="col-md-4">
-                    <h4>3. Impressão</h4>
+                    <img src="imgs/impressao.png" class="img-fluid" style="width: 300px; height: 250px; border-radius: 5%;">
+                    <h4 class="mt-4">3. Impressão</h4>
                     <p>A Creality K1 começa a construir o objeto camada por camada, aquecendo e extrudando o material através de um bico.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
+    
 
     <!-- Aplicações da Impressão 3D -->
-    <section class="applications text-center py-5">
+    <section id="aplicacoes" class="py-5 text-center">
         <div class="container">
             <h2>Aplicações da Impressão 3D</h2>
             <p>A impressão 3D oferece inúmeras possibilidades em diversas áreas:</p>
             <div class="row mt-4">
                 <div class="col-md-4">
+                        <img src="imgs/prototiopagem.jpg" class="img-fluid" style="width: 300px; height: 250px; border-radius: 5%;">
                     <h4>Prototipagem Rápida</h4>
-                    <p>Empresas usam impressoras 3D para criar protótipos de produtos rapidamente e com custo reduzido.</p>
+                    <p>Empresas usam impressoras 3D para criar protótipos de produtos rapidamente e com custo reduzido.
+                    </p>
                 </div>
                 <div class="col-md-4">
+                    <img src="imgs/educacao.jpg" class="img-fluid" style="width: 300px; height: 250px; border-radius: 5%;">
                     <h4>Educação</h4>
-                    <p>Escolas e universidades utilizam a impressão 3D para ensinar conceitos de engenharia, design e ciências.</p>
+                    <p>Escolas e universidades utilizam a impressão 3D para ensinar conceitos de engenharia, design e
+                        ciências.</p>
                 </div>
                 <div class="col-md-4">
+                    <img src="imgs/saude.jpg" class="img-fluid" style="width: 300px; height: 250px; border-radius: 5%;">
                     <h4>Saúde</h4>
-                    <p>Na área médica, a impressão 3D é utilizada para criar próteses personalizadas e modelos para planejamento cirúrgico.</                </div>
+                    <p>Na área médica, a impressão 3D é utilizada para criar próteses personalizadas e modelos para
+                        planejamento cirúrgico.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Contato -->
+    <section id="contato" class="bg-light py-5 text-center">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato para mais informações sobre impressão 3D.</p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Rodapé -->
-    <footer class="footer text-center">
+    <footer class="footer bg-dark text-white text-center py-4">
         <div class="container">
             <p>&copy; 2024 Impressão 3D por Victor Theodoro. Todos os direitos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Home</a></li>
+                <li class="list-inline-item"><a href="#sobre" class="text-white">Sobre</a></li>
+                <li class="list-inline-item"><a href="#como-funciona" class="text-white">Como Funciona</a></li>
+                <li class="list-inline-item"><a href="#aplicacoes" class="text-white">Aplicações</a></li>
+                <li class="list-inline-item"><a href="#contato" class="text-white">Contato</a></li>
+            </ul>
         </div>
     </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-    <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
